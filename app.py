@@ -16,7 +16,6 @@ def load_data():
     df = pd.read_excel('AdidasSalesdata.xlsx')
     df=df.drop('Retailer ID', axis=1)
     return df
-
 # 함수의 return값을 caching하고 있기 때문에 반복적으로 로드할 필요가 없음
 df = load_data()
 # st.dataframe(df)
